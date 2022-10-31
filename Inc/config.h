@@ -165,8 +165,8 @@
 
 // Extra functionality
 // #define STANDSTILL_HOLD_ENABLE          // [-] Flag to hold the position when standtill is reached. Only available and makes sense for VOLTAGE or TORQUE mode.
-// #define ELECTRIC_BRAKE_ENABLE           // [-] Flag to enable electric brake and replace the motor "freewheel" with a constant braking when the input torque request is 0. Only available and makes sense for TORQUE mode.
-// #define ELECTRIC_BRAKE_MAX    100       // (0, 500) Maximum electric brake to be applied when input torque request is 0 (pedal fully released).
+ #define ELECTRIC_BRAKE_ENABLE           // [-] Flag to enable electric brake and replace the motor "freewheel" with a constant braking when the input torque request is 0. Only available and makes sense for TORQUE mode.
+ #define ELECTRIC_BRAKE_MAX    100       // (0, 500) Maximum electric brake to be applied when input torque request is 0 (pedal fully released).
 // #define ELECTRIC_BRAKE_THRES  120       // (0, 500) Threshold below at which the electric brake starts engaging.
 // ########################### END OF MOTOR CONTROL ########################
 
@@ -174,7 +174,7 @@
 
 // ############################## DEFAULT SETTINGS ############################
 // Default settings will be applied at the end of this config file if not set before
-#define INACTIVITY_TIMEOUT        8       // Minutes of not driving until poweroff. it is not very precise.
+#define INACTIVITY_TIMEOUT        5       // Minutes of not driving until poweroff. it is not very precise.
 #define BEEPS_BACKWARD            1       // 0 or 1
 #define ADC_MARGIN                100     // ADC input margin applied on the raw ADC min and max to make sure the MIN and MAX values are reached even in the presence of noise
 #define ADC_PROTECT_TIMEOUT       100     // ADC Protection: number of wrong / missing input commands before safety state is taken
